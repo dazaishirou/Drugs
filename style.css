@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One');
+@import url('https://fonts.googleapis.com/css?family=Revalia');
+@import url('https://fonts.googleapis.com/css?family=Khand');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+ @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
+
+
+
+::-webkit-scrollbar {width: 2px;}
+::-webkit-scrollbar-thumb {background-color: rgba(255,255,255,0.08);}
+
+.vvv{
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  height: 700px;
+  z-index:99;
+}
+body{
+  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-big.png"), linear-gradient(to bottom, #000, #0e010f);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  overflow-y:hidden;
+ overflow-x:scroll;
+}
+
+.virus_body{
+  position:absolute;
+  width:1200px;
+  height:600px;
+  bottom:-4px;
+  left:200px;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  opacity:0.3;
+}
+
+.virus_body:hover{
+  opacity:1;
+}
+
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.virus{
+  bottom:0px;
+  right:0px;
+  height:120%;
+  position:absolute;
+  z-index:10;
+}
+
+.virus_body:hover .virus{
+  right:-200px;
+  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition-delay:.5s;
+}
+
+
+
+
+
+
+
+
+
+.box {
+position:absolute; top:200px; left:270px; margin:auto; overflow:hidden; width:300px; z-index:400;
+background-color:#000; height:130px; padding:20px; opacity:0;
+color:#ccc; font-size:12px; font-family: 'Khand', sans-serif;
+
+
+}
+.virus_body:hover .box{opacity:0.5;
+transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-webkit-transition: all 0.4s ease-in-out;
+  transition-delay:1s;
+}
+
+
+
+
+.whodis{
+  position:absolute;
+  left:350px;
+  top:100px;
+  z-index:900;
+  font-size:20px;
+  width:200px;
+  text-shadow: -1px -1px #a37f5b, 1px 1px #404158,  2px 2px #404158;
+  opacity:0;
+}
+
+.virus_body:hover .whodis{
+  opacity:1;
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition-delay:1s;
+}
+
+.weed{
+  font-family: 'Cinzel', cursive;
+  position:absolute;
+   color: #ffffff;
+    text-transform: uppercase;
+      z-index:1;
+}
+.weed2{
+  font-family: 'Cinzel', cursive;
+  position:absolute;
+  left:75px;
+   color: #ffffff;
+    text-transform: uppercase;
+      z-index:1;
+}
+.symbiote_new{
+  font-family: 'Nosifer', cursive;
+    position:absolute;
+  top:22px;
+  color: #ffffff;
+    text-transform: uppercase;
+  opacity:0.7;
+      z-index:1;
+  cursor:pointer;
+}
+
+.cocaine{
+  font-family: 'Cinzel', cursive;
+    position:absolute;
+  top:-20px;
+  color: #ffffff;
+    text-transform: uppercase;
+  opacity:.7;
+    font-size:14px;
+  cursor:pointer;
+      z-index:1;
+}
+.venom{
+  font-family: 'Cinzel', cursive;
+    position:absolute;
+  top:65px;
+  color: #ffffff;
+    text-transform: uppercase;
+  opacity:.5;
+  border: solid 1px white;
+  padding:2px;
+    font-size:10px;
+  cursor:pointer;
+      z-index:1;
+  
+}
+.Necrodicta{
+  font-family: 'Cinzel', cursive;
+    position:absolute;
+  top:65px;
+  left:55px;
+  color: #ffffff;
+    text-transform: uppercase;
+  opacity:.5;
+  border: solid 1px white;
+  padding:2px;
+    font-size:10px;
+  cursor:pointer;
+      z-index:1;
+}
+.virus_new{
+  font-family: 'Cinzel', cursive;
+    position:absolute;
+  top:50px;
+  color: #ffffff;
+    text-transform: uppercase;
+  opacity:0.5;
+  font-size:12px;
+  cursor:pointer;
+    z-index:1;
+}
+
+.virus_new:hover, .level:hover, .orig:hover, .title:hover, .Necrodicta:hover, .venom:hover{
+  opacity:1;
+}
+[data-title] {
+
+  z-index:99;
+  cursor: help;
+}
+
+[data-title]:hover::before {
+  content: attr(data-title);
+  position: absolute;
+  top: 0px;
+  left:200px;
+  z-index:99;
+    text-transform: lowercase;
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 2px;
+background-color: #696969;
+background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  color: white;
+  font-size: 12px;
+  font-family: sans-serif;
+  white-space: pre-line;
+  width: 300px;
+
+}
+[data-title]:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 8px;
+z-index:99;
+  display: inline-block;
+  color: #fff;
+  border: 8px solid transparent;	
+  border-bottom: 8px solid #000;
+}
+
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+    cursor:pointer;
+}
+
+.v_sym{
+text-decoration: none;
+   color:purple; 
+    cursor:pointer;
+}
+
+.v_box_img{
+  position:absolute;
+  margin:auto;
+  left:0px;
+  right:0px;
+  height:100%;
+  width:100%;
+  bottom:0px;
+  overflow:hidden;
+  background-image:url(https://i.ibb.co/89dnNs8/31ff011c501845991adcb16c2b496df6-1.png);
+  background-size:150%;
+  filter: blur(5px);
+}
+
+
+
+.rain {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.rain.back-row {
+  display: none;
+  z-index: 1;
+  bottom: 60px;
+  opacity: 0.5;
+}
+
+body.back-row-toggle .rain.back-row {
+  display: block;
+}
+
+.drop {
+  position: absolute;
+  bottom: 100%;
+  width: 15px;
+  height: 120px;
+  pointer-events: none;
+  animation: drop 0.5s linear infinite;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0vh);
+  }
+  75% {
+    transform: translateY(90vh);
+  }
+  100% {
+    transform: translateY(90vh);
+  }
+}
+
+.stem {
+  width: 1px;
+  height: 60%;
+  margin-left: 7px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+  animation: stem 0.5s linear infinite;
+}
+
+@keyframes stem {
+  0% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.splat {
+  width: 15px;
+  height: 10px;
+  border-top: 2px dotted rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+  animation: splat 0.5s linear infinite;
+  display: none;
+}
+
+body.splat-toggle .splat {
+  display: block;
+}
+
+@keyframes splat {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  90% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+
+
+
+.virus_body{
+
+    border-top: rgba(227,26,32,255) 1px solid;
+  border-left: rgba(227,26,32,255) 1px solid;
+  border-right: rgba(227,26,32,255) 1px solid;
+}
+.v_hover{
+  position:absolute;
+background-image:url();
+  background-size:cover;
+    z-index:300;
+  left:00px;
+  transition:all .7s ease-in-out;
+  height:600px;
+  width:1068px;
+  bottom:0px;
+}
+.v_hover:hover{
+  opacity:0;
+    transition:all .7s ease-in-out;
+}
+
+.virus_body:before, .v_box:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #8a2be2, #9966cc, #702963 ,#8F00FF, #DA70D6, #9370DB, 
+		#8A2BE2, #8B008B,#9932CC, #9400D3);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.virus_body:after {
+	filter: blur(50px);
+}
+::-webkit-scrollbar { width: 1px; height: 1px; background: #;}
+::-webkit-scrollbar-thumb { background-color: #1; -webkit-border-radius: 2px; border-radius: 1px;}
+
+
+
+
+
+
+
+
+
+/*-------MUSIC PLAYER BY GLENTHEMES-------*/
+#glenplayer02 {
+   position:absolute;
+   bottom:10px;margin-bottom:20px;
+   left:0px;margin-left:20px;
+   display:flex;
+   z-index:8;
+}
+#glenplayer02 a {text-decoration:none;}
+
+#glenplayer02 > div {
+   align-self:center;
+   -webkit-align-self:center;
+}
+#glenplayer02 i{
+  font-size:12px;
+}
+
+.music-controls {
+   user-select:none;
+   -webkit-user-select:none;
+   width:13px;
+   font-size:13px;
+   cursor:pointer;
+}
+
+.playy, .pausee {color:#A020F0;} /* color of play & pause buttons */
+
+.pausee {display:none;}
+
+.sonata {
+   margin-left:10px;
+   color:#4B0082; /* color of music note symbol */
+}
+
+.labeltext {
+   margin-left:8px;
+   font-family:courier new;
+   font-size:9px;
+   color:#4B0082; /* color of song title */
+}
+
+
+
+
+
+
+
+
+
+
+.credit{
+  position:absolute;
+  bottom:30px;
+  right:70px;
+  z-index:999999;
+}
+
+.cred{
+    position:absolute;
+
+  color: #ffffff;
+    text-transform: uppercase;
+  opacity:0.5;
+  font-size:12px;
+  cursor:pointer;
+    z-index:1;
+}
+
+.cred:hover{
+  opacity:1;
+}
+[data-title] {
+
+  z-index:99;
+  cursor: help;
+}
+
+[data-title]:hover::before {
+  content: attr(data-title);
+  position: absolute;
+    text-transform: lowercase;
+  display: inline-block;
+
+  border-radius: 2px;
+background-color: #696969;
+background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  color: white;
+  font-size: 10px;
+  font-family: sans-serif;
+  white-space: pre-line;
+
+
+}
+[data-title]:hover::after {
+  content: '';
+  display: inline-block;
+  color: #fff;
+  border: 8px solid transparent;	
+  border-bottom: 8px solid #000;
+}
+
+
+
+
+
+
+.videotrigger {
+  width: 100%;
+  height: auto;
+  bottom:0px;
+  position:absolute;
+  left:0px;
+  z-index:0;
+}
